@@ -1,0 +1,17 @@
+Done: 5.25
+
+ Performance counter stats for './prog_O0':
+
+          50112.80 msec task-clock                                                            
+               203      context-switches                                                      
+                 1      cpu-migrations                                                        
+            146630      page-faults                                                           
+            146630      minor-faults                                                          
+                 0      major-faults                                                          
+
+      50.121554620 seconds time elapsed
+
+      49.819851000 seconds user
+       0.291952000 seconds sys
+
+

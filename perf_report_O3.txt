@@ -1,0 +1,35 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 286  of event 'cpu-clock'
+# Event count (approx.): 2888888860
+#
+# Children      Self  Command  Shared Object     Symbol                                                                                                                                                        
+# ........  ........  .......  ................  ..............................................................................................................................................................
+#
+   100.00%     0.00%  prog_O3  prog_O3           [.] _start
+            |
+            ---_start
+               __libc_start_main
+               0x759f5cc2a601
+               |          
+               |--94.06%--main
+               |          |          
+               |          |--82.17%--compute(std::vector<float, std::allocator<float> >&, std::vector<float, std::allocator<float> > const&, std::vector<float, std::allocator<float> > const&) (inlined)
+               |          |          
+               |          |--11.19%--std::vector<float, std::allocator<float> >::vector(unsigned long, float const&, std::allocator<float> const&) (inlined)
+               |          |          std::vector<float, std::allocator<float> >::_M_fill_initialize(unsigned long, float const&) (inlined)
+               |          |          float* std::__uninitialized_fill_n_a<float*, unsigned long, float, float>(float*, unsigned long, float const&, std::allocator<float>&) (inlined)
+               |          |          float* std::uninitialized_fill_n<float*, unsigned long, float>(float*, unsigned long, float const&) (inlined)
+               |          |          float* std::__do_uninit_fill_n<float*, unsigned long, float>(float*, unsigned long, float const&) (inlined)
+               |          |          void std::_Construct<float, float const&>(float*, float const&) (inlined)
+               |          |          |          
+               |          |           --10.84%--0xffffffff8400134b
+               |          |                     0xffffffff8524334d
+               |          |                     |          
+               |          |                     |--8.04%--0xffffffff84294714
+               |          |                     |          0xffffffff84597085
+               |          |                     |          0xffffffff84596e82
+               |          |                     |          |          

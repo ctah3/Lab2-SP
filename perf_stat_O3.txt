@@ -1,0 +1,17 @@
+Done: 5.25
+
+ Performance counter stats for './prog_O3':
+
+           2183.42 msec task-clock                                                            
+                10      context-switches                                                      
+                 1      cpu-migrations                                                        
+            146630      page-faults                                                           
+            146630      minor-faults                                                          
+                 0      major-faults                                                          
+
+       2.184415485 seconds time elapsed
+
+       1.784158000 seconds user
+       0.400035000 seconds sys
+
+

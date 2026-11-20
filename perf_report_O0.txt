@@ -1,0 +1,35 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 5K of event 'cpu-clock'
+# Event count (approx.): 50767676260
+#
+# Children      Self  Command  Shared Object     Symbol                                                                                                                                                        
+# ........  ........  .......  ................  ..............................................................................................................................................................
+#
+   100.00%     0.00%  prog_O0  prog_O0           [.] _start
+            |
+            ---_start
+               __libc_start_main
+               0x709998e2a601
+               main
+               |          
+               |--78.91%--compute(std::vector<float, std::allocator<float> >&, std::vector<float, std::allocator<float> > const&, std::vector<float, std::allocator<float> > const&)
+               |          |          
+               |          |--32.71%--std::vector<float, std::allocator<float> >::operator[](unsigned long) const
+               |          |          |          
+               |          |           --9.81%--std::vector<float, std::allocator<float> >::size() const
+               |          |          
+               |          |--10.98%--std::vector<float, std::allocator<float> >::size() const
+               |          |          
+               |           --8.65%--std::vector<float, std::allocator<float> >::operator[](unsigned long)
+               |                     |          
+               |                      --2.09%--std::vector<float, std::allocator<float> >::size() const
+               |          
+               |--15.46%--std::vector<float, std::allocator<float> >::operator[](unsigned long) const
+               |          
+               |--2.07%--std::vector<float, std::allocator<float> >::operator[](unsigned long)
+               |          
+               |--1.87%--std::vector<float, std::allocator<float> >::size() const
